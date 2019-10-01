@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row">
+    <% if user_signed_in? %>
+      <%= link_to 'Books', books_path, class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
