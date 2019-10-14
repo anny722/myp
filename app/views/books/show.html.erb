@@ -7,6 +7,6 @@
 </h3>
 <%= link_to "Edit book", edit_book_path(@book) %>
 <br>
-<p>  <%= @book.description %>
+<p>  <%= @book.description.html_safe %>
 </p>
 </div>
