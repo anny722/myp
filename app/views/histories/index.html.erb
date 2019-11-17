@@ -1,0 +1,15 @@
+<div class="container">
+  <%= link_to 'New', new_history_path, class: 'btn btn-primary mb-4' %>
+  <div class="cards">
+    <% @histories.each do |history| %>
+      <div class="card-container mb-2" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= history.event %></h5>
+          <p class="card-text"><%= history.start_date %></p>
+          <p class="card-text"><%= history.end_date %></p>
+          <%= link_to 'Details', history_path(history), class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

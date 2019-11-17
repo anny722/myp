@@ -1,0 +1,12 @@
+<div class="container">
+  <%= simple_form_for (@history)  do |f| %>
+    <%= f.input :event, placeholder: 'Event name', label: false, class: 'ml-3' %>
+    <%= f.input :start_date, placeholder: 'Start date', label: false, class: 'ml-3' %>
+    <%= f.input :end_date, placeholder: 'End date', label: false, class: 'ml-3' %>
+    <%= f.input :description, placeholder: 'Description', label: false, class: 'ml-3' %>
+    <%= f.submit "New Event", class: "btn btn-outline-primary" %>
+  <% end %>
+  <%= link_to "Back", histories_path %>
+
+</div>
+
